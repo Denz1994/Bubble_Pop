@@ -124,13 +124,13 @@ def main():
     #Introduction to game with rules.
 
     print ("\n\n\nWelcome to BUBBLE POP!!!\n")
-    instructions=raw_input("Would you like to read the instructions? Type: (yes/no)")
+    instructions=input("Would you like to read the instructions? Type: (yes/no)")
     if instructions.lower()=='yes':
         print ("The goal is to rack up as many points before the game timer ends."
             "You have sixty seconds.\n"
             "The blue ball is worth 100 points.\nThe red ball is worth 200 points.\nThe purple ball is worth 400 points.\n"
             "The game will start soon.\n\n"
-            "Click on the new window that will be made at the bottom of the screen in a few seconds and play.")
+            "Open the new window that will be made in a few seconds and play.")
         time.sleep(18)
     elif instructions.lower()=='no':
         print ('Okay, have fun!!!\n\n Click on the new window that will be made at the bottom of the screen in a few seconds and play.')
@@ -160,7 +160,7 @@ def main():
         #Adds points to total score
         score=plus_one(score)
         print ('Points:\t'+str(score))
-        print '\n'*3
+        print ('\n'*3)
         #time.sleep(.2)
         draw_one(one)
         text.clear()
@@ -175,7 +175,7 @@ def main():
         #Adds points to total score
         score=plus_two(score)
         print ('Points:\t'+str(score))
-        print '\n'*3
+        print ('\n'*3)
         draw_two(two)
         text.clear()
 
@@ -189,7 +189,7 @@ def main():
         #Adds points to total score
         score=plus_four(score)
         print ('Points:\t'+str(score))
-        print '\n'*3
+        print ('\n'*3)
         draw_four(four)
         text.clear()
 
@@ -269,10 +269,10 @@ def main():
                     global yes
                     global no
                     if restart.lower()=="yes":
-                        print '\nCool! Press(Shift+F10)'
+                        print ('\nCool! Press(Shift+F10)')
                         sys.exit(0)
                     if restart.lower()=='no':
-                        print '\nOkay, thank you for playing :)'
+                        print ('\nOkay, thank you for playing :)')
                         sys.exit(0)
 
 
